@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "\e[32 this from colouring [0m"
+echo -e "\e[32 this from colouring [0m"
