@@ -9,4 +9,9 @@ $git commit -m
 $git push 
 ```
 
+### How to open folder on vs code with a command 
+```
+$code foldername
+```
+
 
