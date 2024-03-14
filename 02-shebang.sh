@@ -6,4 +6,4 @@ echo first
 echo second
 echo third
 
-echo "-e fourth\nfifth\nsixth"
+echo -e "fourth\nfifth\nsixth"
