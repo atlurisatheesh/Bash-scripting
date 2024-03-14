@@ -7,4 +7,4 @@ echo b
 echo d
 echo print the value of a: $a
 echo print the value of c: $c
-eccho "print the value of b: ${b}"
+echo "print the value of b: ${b}"
