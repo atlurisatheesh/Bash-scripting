@@ -1,1 +1,3 @@
-# This is a sample file
+#!/bin/bash
+
+echo Hai iam printing from sample file
