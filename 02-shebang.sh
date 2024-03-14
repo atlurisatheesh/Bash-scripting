@@ -8,4 +8,6 @@ echo third
 
 echo -e "fourth\nfifth\nsixth"
 
-echo -e "I\tam\tpracticing\from\shebang"
+echo -e "I\tam\tpracticing\tfrom\tshebang"
+
+echo -e "This\toutput\tis\displaying\from\tshebang\tNotation\n\tHai i am from shebang basic example"
