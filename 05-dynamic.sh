@@ -2,7 +2,7 @@
 
 DATE="$(date +%F)"
 TIME="$(date +%c)"
-Active_session="$(who | -wc -l)"
+Active_session="$(who | wc -l)"
 
 
 echo "Todays date is : $DATE"
