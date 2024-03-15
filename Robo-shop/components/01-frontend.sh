@@ -13,11 +13,11 @@ stat() {
     fi
 }
 
-echo "Installing ngninx"
+echo -n "Installing ngninx"
    yum install nginx -y &>> /tmp/frontend.log
    stat $?
 
-echo "startin nginx"
+echo -n "startin nginx"
     systemctl enable nginx &>> /tmp/frontend.log
     systemctl start nginx  &>> /tmp/frontend.log
     stat $?
@@ -31,10 +31,10 @@ cd /usr/share/nginx/html
 rm -rf *     &>>  /tmp/frontend.log
 stat $?
 
-
-# unzip /tmp/frontend.zip
-# mv frontend-main/* .
-# mv static/* .
-# rm -rf frontend-main README.md
-# mv localhost.conf /etc/nginx/default.d/roboshop.conf
-
+echo -n "Extracting the frontent"
+    unzip /tmp/frontend.zip   &>>  /tmp/frontend.log
+    mv frontend-main/* .
+    mv static/* .
+    rm -rf frontend-main README.md
+    mv localhost.conf /etc/nginx/default.d/roboshop.conf
+    stat $?
