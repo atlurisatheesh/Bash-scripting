@@ -13,15 +13,15 @@
     ACTION=$1
     case $ACTION in
         start)
-            echo -e"\e[32m Starting the payment \e[0m"
+            echo -e "\e[32m Starting the payment \e[0m"
             exit 0
             ;;
         Stop)
-            echo -e"\e[31m Stoping the payment \e[0m"
+            echo -e "\e[31m Stoping the payment \e[0m"
             exit 1
             ;;
         Restart)
-            echo -e"\e[34m Restarting the payment \e[0m"
+            echo -e "\e[34m Restarting the payment \e[0m"
             exit 2
             ;;
         *)
