@@ -24,7 +24,7 @@ stat(){
     echo "Todays date is : "$(date +%c)""
 }
 ses(){
-    echo "$uptime"
+    echo "$(uptime)"
 }
 ses
 repo
