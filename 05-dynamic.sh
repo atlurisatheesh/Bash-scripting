@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE="$(date +%F)"
-TIME="$(time)"
+TIME="$(date +%c)"
 
 echo "Todays date is : $DATE"
 echo "Now the time is : $TIME"
