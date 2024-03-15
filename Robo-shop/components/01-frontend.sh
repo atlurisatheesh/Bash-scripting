@@ -7,11 +7,11 @@ echo -e "\e[31m Script is expected to executed by the root user or with a sudo p
 fi
 
 echo "Installing ngninx"
-   yum install nginx -y &>> /temp/frontend.log
+   yum install nginx -y &>> /tmp/frontend.log
 
 echo "startin nginx"
-    systemctl enable nginx &>> /temp/frontend.log
-    systemctl start nginx  &>> /temp/frontend.log
+    systemctl enable nginx &>> /tmp/frontend.log
+    systemctl start nginx  &>> /tmp/frontend.log
 
 echo "downloading the schema"
  curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
