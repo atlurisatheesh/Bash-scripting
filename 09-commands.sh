@@ -20,9 +20,10 @@ Demo(){
 repo(){
     echo "Hai I am fro funtion insde the funtion"
 }
+repo
 }
 Demo
-repo
+
 sleep 1
 Demo
 
