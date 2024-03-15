@@ -13,14 +13,6 @@ stat() {
     fi
 }
 
-# stat() {
-#     if [ $1 -eq 0 ]; then 
-#         echo -e "\e[32m success \e[0m"
-#     else 
-#         echo -e "\e[31m failure \e[0m"
-#         exit 2
-#     fi
-# }
 echo "Installing ngninx"
    yum install nginx -y &>> /tmp/frontend.log
    stat $?
@@ -34,8 +26,12 @@ echo "downloading the schema"
  curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
  stat $?
 
-# cd /usr/share/nginx/html
-# rm -rf *
+echo -n "Clean up of ${COMPONENT} : "
+cd /usr/share/nginx/html    
+rm -rf *     &>>  /tmp/frontend.log
+stat $?
+
+
 # unzip /tmp/frontend.zip
 # mv frontend-main/* .
 # mv static/* .
