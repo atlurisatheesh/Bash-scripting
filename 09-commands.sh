@@ -25,6 +25,7 @@ stat(){
 }
 ses(){
     echo "$(uptime)"
+    echo "$(uptime | awk -F : '(print $NF)' | awk -F : '(print $2)')"
 }
 ses
 repo
