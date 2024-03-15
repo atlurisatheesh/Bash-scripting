@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bash $1.sh
+sh $1.sh
