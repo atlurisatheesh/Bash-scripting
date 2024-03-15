@@ -5,15 +5,22 @@ if [ $USER_ID -ne 0 ]; then
 echo -e "\e[31m Script is expected to executed by the root user or with a sudo privilege \e[0m \n \t Example: \n\t\t sudo bash wrapper.sh frontend"
        exit 1
 fi
-
 stat() {
-    if [ $1 -eq 0 ]; then 
-        echo -e "\e[32m success \e[0m"
-    else 
-        echo -e "\e[31m failure \e[0m"
-        exit 2
+    if [ $1 -eq 0 ]; then
+        echo -e "\e[32m Success \e[0m"
+    else
+        echo -e "\e[32 Failure \e[0m"
     fi
 }
+
+# stat() {
+#     if [ $1 -eq 0 ]; then 
+#         echo -e "\e[32m success \e[0m"
+#     else 
+#         echo -e "\e[31m failure \e[0m"
+#         exit 2
+#     fi
+# }
 echo "Installing ngninx"
    yum install nginx -y &>> /tmp/frontend.log
    stat $?
