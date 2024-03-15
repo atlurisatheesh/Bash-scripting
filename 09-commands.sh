@@ -17,9 +17,12 @@ Demo(){
     echo "Hai I am from command script"
     echo "I came here to say Hai"
     echo "I am done with that, Okay Bye"
-
+repo(){
+    echo "Hai I am fro funtion insde the funtion"
+}
 }
 Demo
+repo
 sleep 1
 Demo
 
