@@ -20,3 +20,7 @@ Demo(){
 
 }
 Demo
+sleep 1
+Demo
+
+sleep 2
