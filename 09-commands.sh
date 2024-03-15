@@ -23,6 +23,10 @@ repo(){
 stat(){
     echo "Todays date is : "$(date +%c)""
 }
+ses(){
+    echo "$uptime"
+}
+ses
 repo
 stat
 }
