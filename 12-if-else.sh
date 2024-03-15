@@ -5,7 +5,10 @@ b=20
 c=150
 d=$((a * b))
 e=$((d / c))
-if [ $a -lt $b ]; then
+if [ $a -gt $b ]; then
     echo "printing the value of d : $d"
     exit 1
+else
+    echo "printing the value of d : $d"
+    exit 2
 fi
