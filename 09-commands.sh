@@ -20,7 +20,11 @@ Demo(){
 repo(){
     echo "Hai I am fro funtion insde the funtion"
 }
+stat(){
+    echo "Todays date is : "$(date +%c)""
+}
 repo
+stat
 }
 Demo
 
