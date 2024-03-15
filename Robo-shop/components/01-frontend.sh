@@ -38,3 +38,8 @@ echo -n "Extracting the frontent"
     rm -rf frontend-main README.md
     mv localhost.conf /etc/nginx/default.d/roboshop.conf
     stat $?
+
+echo -n "Restarting ${COMPONENT}:"
+systemctl daemon-reload     &>>  /tmp/frontend.log
+systemctl restart nginx     &>>  /tmp/frontend.log
+stat $?
